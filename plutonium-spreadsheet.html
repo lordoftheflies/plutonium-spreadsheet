@@ -1,0 +1,37 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../hot-table/hot-table.html">
+
+<dom-module id="plutonium-spreadsheet">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `plutonium-spreadsheet`
+     * Spreadsheet like component. Edit
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class PlutoniumSpreadsheet extends Polymer.Element {
+      static get is() { return 'plutonium-spreadsheet'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'plutonium-spreadsheet'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PlutoniumSpreadsheet.is, PlutoniumSpreadsheet);
+  </script>
+</dom-module>
